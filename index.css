@@ -1,0 +1,105 @@
+body {
+  background-color: grey
+}
+.parent-cantainer {
+  height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8%;
+}
+
+.cail {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 2px solid rgb(228, 220, 220);
+  border-radius: 9px;
+  position: relative;
+  top:0;
+  transition: top ease 0.5s;
+  background-color: rgb(6, 6, 6);
+  color: white;
+  cursor: pointer;
+}
+.cail:hover {
+  top: -8px;
+  background-color: red;
+}
+
+.center-container {
+  height: 100%;
+ 
+  /* background-color: black; */
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+ 
+}
+
+.heading {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  animation-name: mymove;
+  position: relative;
+  animation-duration: 10s;
+  background-color: aliceblue;
+  box-shadow: rgba(9, 8, 8, 0.25) 0px 54px 55px,
+    rgba(3, 2, 2, 0.12) 0px -12px 30px, rgba(9, 9, 9, 0.12) 0px 4px 6px,
+    rgba(14, 12, 12, 0.17) 0px 12px 13px, rgba(13, 8, 8, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  background-color:white;
+  color:black;
+}
+@keyframes mymove {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.turn{
+  color: rgb(255, 0, 0);
+  background-color: aliceblue;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.clickBtn {
+  font-size: 2rem;
+
+  background-color: blueviolet;
+  border: none;
+  height: 100%;
+  border-radius: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 1px 3px 4px 3px;
+
+  cursor: pointer;
+}
+.clickBtn:hover {
+  background-color:red;
+  color: white;
+}
+/* .line
+{
+background-color: rgb(220, 19, 19);
+width: 0;
+height: 3px;
+position: absolute;
+border-radius: 8px;
+transition: width is ease-in-out;
+} */
+
+
